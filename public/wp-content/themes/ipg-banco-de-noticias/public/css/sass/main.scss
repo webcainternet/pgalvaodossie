@@ -1,0 +1,74 @@
+@import "../../bower_components/normalize-scss/normalize";
+@import "vendor/chosen",
+        "vendor/selectize",
+        "vendor/swal",
+        "vendor/selection-sharer";
+
+@import "base/mixins",
+        "base/var-layout",
+        "base/var-typography",
+        "base/typography",
+        "base/grid",
+        "base/utils";
+
+@import "modules/icons",
+        "modules/forms",
+        "modules/dropdown",
+        "modules/cards",
+        "modules/layout";
+
+@import "partials/content",
+        "partials/header",
+        "partials/pages",
+        "partials/archives",
+        "partials/footer",
+        "partials/navigation",
+        "partials/search",
+        "partials/wordpress";
+
+
+#selectionSharerPopover-inner {
+    background: $c-institutional;
+    border-color: $c-institutional;
+}
+
+#selectionSharerPopover:after {
+    background: $c-institutional;
+    box-shadow: none;
+}
+
+#selectionSharerPopover .selectionSharerPopover-arrow {
+    background: $c-institutional;
+    border-color: $c-institutional;
+}
+
+.highlight-img {
+    margin: 2em auto 4em;
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.search-cover__option--positive {
+    text-align: left;
+
+    .search-cover__title,
+    .search-cover__checkbox {
+        color: $c-gray;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    input[type="checkbox"] + span {
+        width: 15px;
+        height: 15px;
+        border: 1px solid $c-gray;
+    }
+
+    input[type="checkbox"] + span:before {
+        font-size: 18px;
+        line-height: 16px;
+    }
+}

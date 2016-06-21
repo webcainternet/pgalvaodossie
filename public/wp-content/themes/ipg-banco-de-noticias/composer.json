@@ -1,0 +1,12 @@
+{
+    "name": "ipg/wp-ipg",
+    "authors": [
+        {
+            "name": "42i",
+            "email": "contato@42i.com.br"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "~1.5"
+    }
+}

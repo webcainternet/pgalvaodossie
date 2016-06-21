@@ -1,0 +1,40 @@
+body {
+    &.body--active { overflow: hidden; }
+    overflow-x: hidden;
+}
+
+.main-content {
+    z-index: $z-mid-front;
+    transition: transform 0.25s ease;
+
+    &--active {
+        overflow: hidden;
+        transform: translate3d(-300px, 0, 0);
+        box-shadow: 5px 0 5px 0 rgba(0,0,0,0.1);
+    }
+}
+
+.page-wrapper {
+    min-height: 100%;
+
+    &::after {
+        content: "";
+
+        display: block;
+    }
+}
+
+.link {
+    color: $c-institutional;
+    transition: color 0.25s ease;
+
+    &:hover {
+        color: cvd($c-institutional, 2);
+    }
+}
+
+.full-page { margin-top: 25%; }
+
+@media all and (min-width: $media-query-desktop) {
+    .full-page { margin-top: 0; }
+}

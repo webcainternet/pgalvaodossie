@@ -1,0 +1,53 @@
+.ipga-row {
+    width: 100%;
+}
+
+.ipga-row__col {
+    width: 33%;
+    display: inline-block;
+}
+
+.ipga-textarea {
+    width: 100%;
+    height: 80px;
+}
+
+.add-highlights-item {
+    padding: 15px;
+    background: #f5f5f5;
+    margin: 5px 0;
+}
+
+.ipga-field-div {
+    overflow: hidden;
+    width: 100%;
+}
+
+.ipga-field-div label {
+    font-weight: 700;
+    margin-top: 16px;
+    display: block;
+}
+
+.ipga-field-div input,
+.ipga-field-div textarea {
+    display: block;
+    width: 100%;
+}
+
+.ipga-field-div textarea {
+    height: 200px;
+}
+
+.ipga-field-div button {
+    float: right;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.ipga-checkbox-field input {
+    display: inline-block;
+    width: auto;
+}
